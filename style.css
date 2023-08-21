@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&family=Montserrat:wght@500&family=Roboto&display=swap");
+@font-face {
+  font-family: "Heveltica";
+  src: url("Free-Sans/FreeSans.ttf");
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(210, 110, 210);
+  background-image: url(images/bg123.jpg);
+}
+
+.container {
+  background-image: url("images/back5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Acme", sans-serif;
+  font-size: 200%;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  max-width: 350px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  background-color: #373138;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+main {
+  padding: 5px;
+  text-align: center;
+}
+
+.date {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #706b71; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  font-size: 9.5px; /* Ukuran teks */
+  width: 90px; /* Lebar kotak tanggal */
+  height: 20px; /* Tinggi kotak tanggal */
+  border-radius: 7px; /* Border radius untuk sudut */
+  margin: 10px auto; /* Membuat tengah secara horizontal dan sedikit jarak dari gambar */
+  z-index: 1;
+}
+
+.image-container {
+  margin: 20px auto;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(20px); /* Mulai dari posisi sedikit di bawah */
+  }
+  to {
+    transform: translateY(0); /* Posisi normal */
+  }
+}
+
+.image-container {
+  animation: slideUp 1s ease-out; /* Menjalankan animasi slideUp dengan durasi 1 detik dan efek ease-out */
+}
+
+#profile-image {
+  width: 100%;
+  height: auto;
+}
+
+.message {
+  font-family: "FreeSans", sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.message-box {
+  background-color: transparent;
+  background: none;
+  border: none;
+  padding: 0%;
+  position: relative;
+}
+
+.message-bubble {
+  background-color: #a30ec1;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  max-width: 70%;
+  position: relative;
+  text-align: left;
+  padding-bottom: 10px;
+  margin-right: 27px;
+  margin-left: auto;
+  margin-bottom: 5px;
+  margin-top: 13px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.message-bubble-left {
+  background-color: #a30ec1;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  max-width: 70%;
+  position: relative;
+  text-align: left;
+  padding-bottom: 10px;
+  margin-right: 45px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  margin-top: 13px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.message-bubble-right {
+  background-color: #a30ec1;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  max-width: 70%;
+  position: relative;
+  text-align: left;
+  padding-bottom: 10px;
+  margin-right: 30px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  margin-top: 13px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.profile-image2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("images/fotoprofiledaru.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  z-index: 1;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  left: -45px;
+}
+
+.message-time {
+  position: absolute;
+  bottom: 6px;
+  right: 13px;
+  font-size: 12px;
+  color: #999;
+}
+
+footer {
+  padding: 20px;
+}
+
+#play-video-button {
+  background-color: #706b71;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: 2px solid #fff; /* Tambahkan outline dengan warna putih */
+  outline-offset: -4px; /* Atur offset outline untuk memberikan tampilan yang lebih baik */
+}
+
+#video-container {
+  display: none;
+  margin-top: 10px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper img.hidden {
+  transform: translateX(100%);
+}
+
+.image-gallery {
+  display: flex; /* Menggunakan flexbox untuk menyusun gambar secara horizontal */
+  overflow-x: scroll; /* Mengizinkan kontainer horizontal untuk discroll */
+  scroll-snap-type: x mandatory; /* Membuat gambar 'snap' pada posisi yang tepat saat discroll */
+  width: 100%; /* Panjang kontainer akan mengikuti lebar layar */
+  gap: 6px; /* Jarak antara gambar */
+  margin: 0 -5px;
+}
+
+.gallery-image {
+  scroll-snap-align: start; /* Menyebabkan gambar 'snap' pada posisi awal setiap gambar */
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image.active {
+  width: 245px;
+  height: 245px;
+  transform: scale(1.05);
+}
+
+.gallery-image:not(.active) {
+  width: 245px;
+  height: 245px;
+}
